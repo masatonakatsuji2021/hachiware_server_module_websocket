@@ -1,0 +1,30 @@
+{
+  "name": "hachiware_server_module_websocket",
+  "version": "1.0.0",
+  "description": "Module for webSocket of web server package \"hachiware_server\".",
+  "main": "index.js",
+  "dependencies": {
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masatonakatsuji2021/hachiware_server_module_websocket.git"
+  },
+  "keywords": [
+    "hachiware",
+    "hachiware",
+    "server",
+    "module",
+    "websocket"
+  ],
+  "author": "Nakatsuji Masato",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masatonakatsuji2021/hachiware_server_module_websocket/issues"
+  },
+  "homepage": "https://hachiware-js.com/server/"
+}
