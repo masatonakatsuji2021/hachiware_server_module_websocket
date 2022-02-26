@@ -18,8 +18,8 @@ const { WebSocketServer } = require("ws");
 
 module.exports = function(conf, context){
 
-    if(!conf.webSockets.length){
-        return;
+    if(!conf.webSockets){
+        conf.webSockets = ["*"];
     }
 
     var wsss = {};
@@ -76,9 +76,14 @@ module.exports = function(conf, context){
         var decisionWss = null;
 
         var colums = Object.keys(wsss);
+
         for(var n = 0 ; n < colums.length; n++){
             var url = colums[n];
             var wss = wsss[url];
+
+            if(url == "*"){
+                decisionWss = wss;
+            }
 
             if(req.url == url){
                 decisionWss = wss;
